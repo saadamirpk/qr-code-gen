@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.holder{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item1{
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+
+h1{
+  text-align: center;
+}
+
+textarea{
+  max-width: 450px;
+  min-width: 220px;
+  max-height: 20vh;
+  min-height: 10vh;
+}
+
+.item2{
+  flex-shrink: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .holder{
+  flex-direction: column;
+  height: auto;
+  }
+
+  .item1{
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
