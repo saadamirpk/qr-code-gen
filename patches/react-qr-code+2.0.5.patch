@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-qr-code/types/index.d.ts b/node_modules/react-qr-code/types/index.d.ts
+index a556a8b..930ea97 100644
+--- a/node_modules/react-qr-code/types/index.d.ts
++++ b/node_modules/react-qr-code/types/index.d.ts
+@@ -6,7 +6,7 @@ declare module 'react-qr-code' {
+     size?: number // defaults to 128
+     bgColor?: string // defaults to '#FFFFFF'
+     fgColor?: string // defaults to '#000000'
+-    level?: 'L' | 'M' | 'Q' | 'H' // defaults to 'L'
++    level?: string
+   }
+ 
+   class QRCode extends React.Component<QRCodeProps, any> {}
